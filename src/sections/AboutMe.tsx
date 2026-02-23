@@ -98,13 +98,12 @@ export default function AboutMe() {
               <div className="absolute -inset-2 border border-charcoal/5 rounded-3xl -z-5" />
               
               {/* Profile Image Placeholder */}
-              <div className="w-full h-full rounded-2xl overflow-hidden shadow-apple-xl bg-gradient-to-br from-softgray to-offwhite flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
-                    <span className="text-5xl font-semibold text-charcoal/30">RSG</span>
-                  </div>
-                  <p className="text-caption text-charcoal/40 uppercase tracking-wider">Profile Photo</p>
-                </div>
+              <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-apple-xl group">
+                <img
+                  src="/profile.jpg"
+                  alt="Riko Satriya Giovanni"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
 
               {/* Floating skill badges */}
