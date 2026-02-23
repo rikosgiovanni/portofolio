@@ -1,14 +1,19 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Mail, ArrowUpRight, Linkedin, Instagram, Music } from 'lucide-react';
+import { Mail, ArrowUpRight} from 'lucide-react';
+
+import Linkedin from '@/assets/linkedin.jpg';
+import Instagram from '@/assets/instagram.jpg';
+import tiktok from '@/assets/tiktok.jpg';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const socialLinks = [
-  { icon: Linkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Instagram, url: 'https://instagram.com', label: 'Instagram' },
-  { icon: Music, url: 'https://tiktok.com', label: 'TikTok' },
+  { icon: Linkedin, url: 'https://linkedin.com/in/rikosgiovanni', label: 'LinkedIn' },
+  { icon: Instagram, url: 'https://instagram.com/rikosgiovanni', label: 'Instagram' },
+  { icon: tiktok, url: 'https://tiktok.com/@rikosgiovanni', label: 'TikTok' },
 ];
 
 export default function Footer() {
@@ -128,18 +133,23 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex justify-center gap-4">
               {socialLinks.map((social) => {
-                const Icon = social.icon;
                 return (
-                  <a
-                    key={social.label}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
-                    aria-label={social.label}
-                  >
-                    <Icon className="w-5 h-5 text-white/70" />
-                  </a>
+                <a
+                  key={social.label}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
+                  aria-label={social.label}
+                >
+                  <div className="w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
+                    <img 
+                      src={social.icon} 
+                      alt={social.label}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </a>
                 );
               })}
             </div>
@@ -150,7 +160,7 @@ export default function Footer() {
         <div className="border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-caption text-white/40">
-              © 2024 Riko Satriya Giovanni. All rights reserved.
+              © 2026 Riko Satriya Giovanni. All rights reserved.
             </p>
             <p className="text-caption text-white/30">
               Crafted with passion in Bandung, Indonesia

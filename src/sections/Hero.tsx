@@ -67,6 +67,50 @@ export default function Hero() {
           },
         }
       );
+
+      gsap.to(".hero-bg", {
+        background: "linear-gradient(to bottom, #ffffff 0%, #eef2ff 50%, #e0f2fe 100%)",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+
+      gsap.to(".hero-orb-blue", {
+        y: -250,
+        opacity: 0.2,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+
+      gsap.to(".hero-orb-purple", {
+        y: 150,
+        opacity: 0.3,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+
+      gsap.to(".hero-title", {
+        textShadow: "0 0 40px rgba(59,130,246,0.4)",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "50% top",
+          scrub: true,
+        },
+      });
+
+
     }, sectionRef);
 
     return () => ctx.revert();
@@ -86,11 +130,16 @@ export default function Hero() {
       className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20"
     >
       {/* Subtle gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-offwhite via-white to-offwhite" />
-      
+      <div
+        className="hero-bg absolute inset-0 -z-10"
+        style={{
+          background: "linear-gradient(to bottom, #ffffff 0%, #ffffff 100%)",
+        }}
+      />      
+
       {/* Decorative gradient orbs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl" />
+      <div className="hero-orb-blue absolute top-1/4 -left-32 w-96 h-96 bg-blue-500/30 rounded-full blur-2xl" />
+      <div className="hero-orb-purple absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-500/30 rounded-full blur-2xl" />
 
       {/* Content */}
       <div ref={contentWrapperRef} className="relative z-10 text-center px-6 max-w-4xl mx-auto">

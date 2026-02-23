@@ -49,12 +49,7 @@ export default function Navigation() {
             }}
             className="text-lg font-semibold text-charcoal tracking-tight hover:opacity-70 transition-opacity flex items-center gap-2"
           >
-            <img 
-              src="/images/logo-icon.jpg" 
-              alt="Logo" 
-              className="w-8 h-8 rounded-lg object-cover"
-            />
-            <span>Riko's Dashboard</span>
+            <span>Riko Satriya Giovanni</span>
           </a>
 
           {/* Desktop Navigation */}

@@ -3,18 +3,28 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowUpRight } from 'lucide-react';
 
+import hardSkills from '@/assets/category-hard-skills.jpg';
+import softSkills from '@/assets/category-soft-skills.jpg';
+import languages from '@/assets/category-languages.jpg';
+import tools from '@/assets/category-tools.jpg';
+
+import linkedin from '@/assets/linkedin.jpg';
+import instagram from '@/assets/instagram.jpg';
+import tiktok from '@/assets/tiktok.jpg';
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const socialLinks = [
-  { name: 'LinkedIn', image: '/images/social-linkedin.jpg', url: 'https://linkedin.com', handle: '@rikosatriya' },
-  { name: 'Instagram', image: '/images/social-instagram.jpg', url: 'https://instagram.com', handle: '@rikosatriya' },
-  { name: 'TikTok', image: '/images/social-tiktok.jpg', url: 'https://tiktok.com', handle: '@rikosatriya' },
+  { name: 'LinkedIn', image: linkedin, url: 'https://linkedin.com/in/rikosgiovanni', handle: '@rikosgiovanni' },
+  { name: 'Instagram', image: instagram, url: 'https://instagram.com/rikosgiovanni', handle: '@rikosgiovanni' },
+  { name: 'TikTok', image: tiktok, url: 'https://tiktok.com/@rikosgiovanni', handle: '@rikosgiovanni' },
 ];
 
 const skillCategories = [
   {
     name: 'Hard Skills',
-    image: '/images/category-hard-skills.jpg',
+    image: hardSkills,
     items: [
       'Data Science & Analytics (Python, Jupyter, SQL)',
       'System Programming (Java, C)',
@@ -26,7 +36,7 @@ const skillCategories = [
   },
   {
     name: 'Soft Skills',
-    image: '/images/category-soft-skills.jpg',
+    image: softSkills,
     items: [
       'Strategic Leadership',
       'Public Speaking & Performance',
@@ -39,7 +49,7 @@ const skillCategories = [
   },
   {
     name: 'Languages',
-    image: '/images/category-languages.jpg',
+    image: languages,
     items: [
       'Indonesian (Native Proficiency)',
       'English (Professional Working Proficiency; IELTS 6.5)',
@@ -47,7 +57,7 @@ const skillCategories = [
   },
   {
     name: 'Tools',
-    image: '/images/category-tools.jpg',
+    image: tools,
     items: [
       'VS Code',
       'GitHub',
@@ -156,11 +166,6 @@ export default function SocialsSkills() {
           {/* Social Links */}
           <div ref={socialsRef} className="opacity-0">
             <h3 className="text-xl font-semibold text-charcoal mb-6 flex items-center gap-3">
-              <img 
-                src="/images/find-me-icon.jpg" 
-                alt="Find Me" 
-                className="w-8 h-8 rounded-lg object-cover"
-              />
               Find Me On
             </h3>
             <div className="space-y-4">
@@ -196,11 +201,6 @@ export default function SocialsSkills() {
           {/* Skills Categories */}
           <div ref={skillsRef} className="opacity-0">
             <h3 className="text-xl font-semibold text-charcoal mb-6 flex items-center gap-3">
-              <img 
-                src="/images/skills-icon.jpg" 
-                alt="Skills" 
-                className="w-8 h-8 rounded-lg object-cover"
-              />
               My Skills
             </h3>
             

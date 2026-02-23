@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Database, Code, Camera, Clapperboard } from 'lucide-react';
+import profile from "@/assets/profile.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -100,7 +101,7 @@ export default function AboutMe() {
               {/* Profile Image Placeholder */}
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-apple-xl group">
                 <img
-                  src="/profile.jpg"
+                  src={profile}
                   alt="Riko Satriya Giovanni"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

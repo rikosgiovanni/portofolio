@@ -4,6 +4,15 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Calendar, MapPin, Trophy, ArrowUpRight } from 'lucide-react';
 import ExperienceModal from '../components/ExperienceModal';
 
+import leadership from '@/assets/cat-leadership.jpg';
+import creative from '@/assets/cat-creative.jpg';
+import programming from '@/assets/cat-programming.jpg';
+import publicspeaking from '@/assets/cat-publicspeaking.jpg';
+
+import shcf from '@/assets/shcf.jpg';
+import charity from '@/assets/charity.jpg';
+import kroyo from '@/assets/kroyo.jpg';
+
 gsap.registerPlugin(ScrollTrigger);
 
 export type Category = 'Leadership' | 'Creative' | 'Programming' | 'Public Speaking';
@@ -26,10 +35,10 @@ export interface ExperienceCard {
 // Replace these image paths with your own category icons
 // ============================================
 const categories: { name: Category; image: string }[] = [
-  { name: 'Leadership', image: '/images/cat-leadership.jpg' },
-  { name: 'Creative', image: '/images/cat-creative.jpg' },
-  { name: 'Programming', image: '/images/cat-programming.jpg' },
-  { name: 'Public Speaking', image: '/images/cat-publicspeaking.jpg' },
+  { name: 'Leadership', image: leadership },
+  { name: 'Creative', image: creative },
+  { name: 'Programming', image: programming },
+  { name: 'Public Speaking', image: publicspeaking },
 ];
 
 // ============================================
@@ -37,10 +46,10 @@ const categories: { name: Category; image: string }[] = [
 // These are the header images for each category's cards
 // ============================================
 const categoryImages: Record<Category, string> = {
-  Leadership: '/images/leadership.jpg',
-  Creative: '/images/creative.jpg',
-  Programming: '/images/programming.jpg',
-  'Public Speaking': '/images/publicspeaking.jpg',
+  Leadership: leadership,
+  Creative: creative,
+  Programming: programming,
+  'Public Speaking': publicspeaking,
 };
 
 // ============================================
@@ -51,69 +60,80 @@ const experiences: ExperienceCard[] = [
   // ============================================
   // EXAMPLE CARD - Copy this template to add more
   // ============================================
+
+    // id: '1',  // Unique ID (1, 2, 3, etc.)
+    // category: 'Leadership',  // Must match one of the categories above
+    // title: 'Your Event/Organization Name',  // Event or organization name
+    // role: 'Your Role/Position',  // Your job title or role
+    // date: '2024',  // Year or date range (e.g., "2023-2024" or "Jan 2024")
+    // location: 'City, Country',  // Location
+    // description: 'Write a brief description of what this experience was about. Keep it 2-3 sentences.',  // Short description
+    // responsibilities: [  // List of things you did (bullet points)
+    //   'First responsibility or task you performed',
+    //   'Second responsibility or achievement',
+    //   'Third responsibility or skill you used',
+    //   'Fourth responsibility (optional)',
+    // ],
+    // results: 'Summarize the outcome or impact. What did you achieve?',  // Results/impact
+    // image: categoryImages.Leadership,  // Use the category image automatically
+
   {
-    id: '1',  // Unique ID (1, 2, 3, etc.)
-    category: 'Leadership',  // Must match one of the categories above
-    title: 'Your Event/Organization Name',  // Event or organization name
-    role: 'Your Role/Position',  // Your job title or role
-    date: '2024',  // Year or date range (e.g., "2023-2024" or "Jan 2024")
-    location: 'City, Country',  // Location
-    description: 'Write a brief description of what this experience was about. Keep it 2-3 sentences.',  // Short description
-    responsibilities: [  // List of things you did (bullet points)
-      'First responsibility or task you performed',
-      'Second responsibility or achievement',
-      'Third responsibility or skill you used',
-      'Fourth responsibility (optional)',
-    ],
-    results: 'Summarize the outcome or impact. What did you achieve?',  // Results/impact
-    image: categoryImages.Leadership,  // Uses the category image automatically
-  },
-  // ============================================
-  // ADD MORE CARDS BELOW - Copy the template above
-  // Make sure each card has a unique id
-  // ============================================
-  
-  // Leadership Example
-  {
-    id: '2',
+    id: '1',
     category: 'Leadership',
     title: 'SHCF Charity Event 2024',
     role: 'Project Leader',
-    date: '2024',
-    location: 'Bandung, Indonesia',
-    description: 'Led a team of volunteers in organizing a charity event focused on community development and social impact. The event brought together local communities, businesses, and volunteers.',
+    date: 'Mar 2024 – May 2024',
+    location: 'Surakarta, Central Java, Indonesia',
+    description: 'Spearheaded a regional-scale charity initiative for Misi Nusantara Orphanage, uniting Christian student representatives from all public high schools in Surakarta to deliver social impact.',
     responsibilities: [
-      'Coordinated team of 20+ volunteers across multiple departments',
-      'Managed event budget and logistics with strict cost control',
-      'Developed fundraising strategies that exceeded targets',
-      'Oversaw event execution and timeline management',
+      'Led a cross-functional committee of 27 members across 5 divisions, coordinating between multiple public high schools.',
+      'Directed end-to-end operations, from concept development and fundraising to on-site execution and evaluation.',
+      'Managed and allocated a Rp3.4+ million budget with strict financial accountability and integrity.',
+      'Collaborated with the Christian Education Teachers’ Forum (MGMP PAK) to secure external partnerships and funding.',
     ],
-    results: 'Successfully raised funds and impacted 500+ community members',
-    image: categoryImages.Leadership,
+    results: 'Achieved 100% execution of planned activities on schedule, providing direct support and resources to Misi Nusantara Orphanage.',
+    image: charity,
   },
-  
-  // Creative Example
+
+  {
+    id: '2',
+    category: 'Leadership',
+    title: 'Surakarta Highschool Christian Forum (SHCF)',
+    role: 'Treasurer',
+    date: 'July 2023 – July 2024',
+    location: 'Surakarta, Central Java, Indonesia',
+    description: 'Served as a core board member for a city-wide forum uniting Christian student representatives from all public high schools in Surakarta, overseen by the MGMP PAK.',
+    responsibilities: [
+      'Managed and stewarded regional funds of Rp7,000,000 with 100% data accuracy and zero discrepancies.',
+      'Maintained rigorous bookkeeping for all city-scale joint worship services and multi-school competitions.',
+      'Directed financial planning and resource allocation to ensure operational discipline across regional programs.',
+      'Facilitated a seamless organizational transition through final audits and asset handovers to the succeeding board.',
+    ],
+    results: 'Established a foundation of financial transparency and accountability for the second generation of the city-wide forum.',    
+    image: shcf,
+  },
+
   {
     id: '3',
     category: 'Creative',
     title: 'Kroyokeanjes ITBJazz 2025',
     role: 'Head of Documentation',
-    date: '2025',
-    location: 'ITB Campus',
-    description: 'Led the documentation team for ITB Jazz annual karaoke event, capturing memorable moments and creating engaging visual content.',
+    date: 'Sep 2025 – Feb 2026',
+    location: 'Bandung, West Java, Indonesia',
+    description: 'Led the multimedia documentation strategy for ITBJazz’s official regeneration and orientation program, ensuring high-quality media coverage for music workshops and organizational training.',
     responsibilities: [
-      'Managed photography and videography team of 8 members',
-      'Directed visual content strategy for social media',
-      'Edited promotional materials and highlight reels',
-      'Coordinated live streaming setup for virtual audience',
+      'Led a documentation team of 3 staff members, overseeing 95% of event activities from start to finish.',
+      'Managed comprehensive media coverage for live band performances and large-scale music workshops.',
+      'Streamlined digital asset management by organizing all visual content into a centralized database.',
+      'Ensured high commitment to documentation standards for internal access and organizational reporting.',
     ],
-    results: 'Produced 500+ photos and 3 highlight videos with 10K+ views',
-    image: categoryImages.Creative,
+    results: 'Produced a high-fidelity visual archive of the program and improved digital workflow for internal reporting.',
+    image: kroyo,
   },
   
   // Programming Example
   {
-    id: '4',
+    id: '99',
     category: 'Programming',
     title: 'Game Development Project',
     role: 'Game Designer/Developer',
@@ -132,7 +152,7 @@ const experiences: ExperienceCard[] = [
   
   // Public Speaking Example
   {
-    id: '5',
+    id: '100',
     category: 'Public Speaking',
     title: 'English Competitions',
     role: 'Gold, Silver & Bronze Medalist',
