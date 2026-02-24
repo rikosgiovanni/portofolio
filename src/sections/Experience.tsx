@@ -15,7 +15,7 @@ import kroyo from '@/assets/kroyo.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export type Category = 'Leadership' | 'Creative' | 'Programming' | 'Public Speaking';
+export type Category = 'Impact & Leadership' | 'Creative Direction' | 'Tech & Systems' | 'Stage Presence';
 
 export interface ExperienceCard {
   id: string;
@@ -35,10 +35,10 @@ export interface ExperienceCard {
 // Replace these image paths with your own category icons
 // ============================================
 const categories: { name: Category; image: string }[] = [
-  { name: 'Leadership', image: leadership },
-  { name: 'Creative', image: creative },
-  { name: 'Programming', image: programming },
-  { name: 'Public Speaking', image: publicspeaking },
+  { name: 'Impact & Leadership', image: leadership },
+  { name: 'Creative Direction', image: creative },
+  { name: 'Tech & Systems', image: programming },
+  { name: 'Stage Presence', image: publicspeaking },
 ];
 
 // ============================================
@@ -46,10 +46,10 @@ const categories: { name: Category; image: string }[] = [
 // These are the header images for each category's cards
 // ============================================
 const categoryImages: Record<Category, string> = {
-  Leadership: leadership,
-  Creative: creative,
-  Programming: programming,
-  'Public Speaking': publicspeaking,
+  'Impact & Leadership': leadership,
+  'Creative Direction': creative,
+  'Tech & Systems': programming,
+  'Stage Presence': publicspeaking,
 };
 
 // ============================================
@@ -76,11 +76,47 @@ const experiences: ExperienceCard[] = [
     // ],
     // results: 'Summarize the outcome or impact. What did you achieve?',  // Results/impact
     // image: categoryImages.Leadership,  // Use the category image automatically
-
+  
+  
   {
     id: '1',
-    category: 'Leadership',
-    title: 'SHCF Charity Event 2024',
+    category: 'Impact & Leadership',
+    title: 'Orientasi Studi Keluarga Mahasiswa ITB (OSKM ITB)',
+    role: 'Mentor',
+    date: 'Aug 2025 – Present',
+    location: 'Bandung, West Java, Indonesia',
+    description: 'Selected as an official mentor for ITB’s annual campus-wide orientation program, guiding 20 freshmen through academic, social, and personal transition into university life.',
+    responsibilities: [
+      'Facilitated structured integration of 20 mentees, acting as a long-term mentor, role model, and academic support partner.',
+      'Applied active listening and psychology-informed communication strategies to address diverse personalities and challenges.',
+      'Provided sustainable mentorship beyond the formal orientation period, supporting long-term student development and adaptation.',
+    ],
+    results: 'Fostered smooth academic-social adaptation and built a foundation for sustained peer mentorship relationships.',
+    image: categoryImages['Impact & Leadership'],
+  },
+
+  {
+    id: '2',
+    category: 'Impact & Leadership',
+    title: 'Kroyokeanjes ITBJazz 2025',
+    role: 'Head of Documentation',
+    date: 'Sep 2025 – Feb 2026',
+    location: 'Bandung, West Java, Indonesia',
+    description: 'Led the end-to-end documentation strategy for ITBJazz’s official regeneration and orientation program, ensuring structured visual storytelling aligned with the organization’s branding and long-term archival objectives.',
+    responsibilities: [
+      'Directed and supervised a documentation team of 3 members, ensuring operational discipline and full event coverage.',
+      'Defined documentation objectives to support organizational reporting, branding, and future promotional materials.',
+      'Coordinated cross-division workflows to guarantee synchronized media capture during workshops.',
+      'Established a centralized digital asset system to improve efficiency and long-term accessibility.',
+    ],
+    results: 'Delivered a structured visual archive that strengthened organizational branding and improved internal digital workflows.',
+    image: kroyo,
+  },
+
+  {
+    id: '3',
+    category: 'Impact & Leadership',
+    title: 'SHCF — Charity Event 2024',
     role: 'Project Leader',
     date: 'Mar 2024 – May 2024',
     location: 'Surakarta, Central Java, Indonesia',
@@ -96,8 +132,8 @@ const experiences: ExperienceCard[] = [
   },
 
   {
-    id: '2',
-    category: 'Leadership',
+    id: '4',
+    category: 'Impact & Leadership',
     title: 'Surakarta Highschool Christian Forum (SHCF)',
     role: 'Treasurer',
     date: 'July 2023 – July 2024',
@@ -112,29 +148,48 @@ const experiences: ExperienceCard[] = [
     results: 'Established a foundation of financial transparency and accountability for the second generation of the city-wide forum.',    
     image: shcf,
   },
+  
+  {
+    id: '5',
+    category: 'Impact & Leadership',
+    title: 'SMA Negeri 1 Surakarta — Christian Religious Unit (Rohkris)',
+    role: 'President',
+    date: 'Dec 2022 – Dec 2023',
+    location: 'Surakarta, Central Java, Indonesia',
+    description: 'Elected President of the Christian Religious Unit (Rohkris), leading organizational strategy, program execution, and cross-functional coordination to strengthen student engagement and institutional collaboration.',
+    responsibilities: [
+      'Oversaw and supervised 10+ internal divisions throughout a one-year executive tenure, ensuring structured execution of all programs and initiatives.',
+      'Served as Project Leader for the School’s Christmas Event, directing 40+ committee members across 8 divisions and achieving 90% attendance from Christian and Catholic students.',
+      'Acted as Vice Project Leader for Easter and Regeneration Services, focusing on operational logistics and leadership transition sustainability.',
+      'Represented the organization in the Surakarta Highschool Christian Forum (SHCF), acting as the primary liaison between students and faculty members to foster inter-school collaboration.',
+    ],
+    results: 'Strengthened organizational governance, increased program participation, and established structured leadership continuity within the unit.',
+    image: categoryImages['Impact & Leadership'],
+  },
 
   {
-    id: '3',
-    category: 'Creative',
-    title: 'Kroyokeanjes ITBJazz 2025',
-    role: 'Head of Documentation',
-    date: 'Sep 2025 – Feb 2026',
-    location: 'Bandung, West Java, Indonesia',
-    description: 'Led the multimedia documentation strategy for ITBJazz’s official regeneration and orientation program, ensuring high-quality media coverage for music workshops and organizational training.',
+    id: '6',
+    category: 'Impact & Leadership',
+    title: 'SMA Negeri 1 Surakarta — School Band Unit (SLIME)',
+    role: 'President',
+    date: 'Sep 2022 – Sep 2023',
+    location: 'Surakarta, Central Java, Indonesia',
+    description: 'Elected President of the SLIME School Band Unit, overseeing strategic direction, performance operations, and cross-functional coordination to elevate musical standards and organizational cohesion.',
     responsibilities: [
-      'Led a documentation team of 3 staff members, overseeing 95% of event activities from start to finish.',
-      'Managed comprehensive media coverage for live band performances and large-scale music workshops.',
-      'Streamlined digital asset management by organizing all visual content into a centralized database.',
-      'Ensured high commitment to documentation standards for internal access and organizational reporting.',
+      'Led and mentored a music ensemble of 15+ members, fostering structured collaboration and continuous skill development.',
+      'Served as Project Leader for the Music Unit’s Gathering Night (Choir & Band), coordinating 35+ participants to strengthen cross-organizational synergy.',
+      'Managed all official school performance bookings, rehearsal schedules, and stakeholder communications to ensure seamless event execution.',
+      'Supervised maintenance and allocation of musical equipment, ensuring technical readiness and consistent sound quality for live performances.',
     ],
-    results: 'Produced a high-fidelity visual archive of the program and improved digital workflow for internal reporting.',
-    image: kroyo,
+    results: 'Enhanced performance reliability, strengthened team cohesion, and improved operational efficiency for school-wide music productions.',
+    image: categoryImages['Impact & Leadership'],
   },
-  
+
+
   // Programming Example
   {
     id: '99',
-    category: 'Programming',
+    category: 'Tech & Systems',
     title: 'Game Development Project',
     role: 'Game Designer/Developer',
     date: '2024',
@@ -147,13 +202,13 @@ const experiences: ExperienceCard[] = [
       'Developed using Unity game engine and C#',
     ],
     results: 'Achieved top marks and positive user feedback',
-    image: categoryImages.Programming,
+    image: categoryImages['Tech & Systems'],
   },
   
   // Public Speaking Example
   {
     id: '100',
-    category: 'Public Speaking',
+    category: 'Stage Presence',
     title: 'English Competitions',
     role: 'Gold, Silver & Bronze Medalist',
     date: '2021-2023',
@@ -166,7 +221,7 @@ const experiences: ExperienceCard[] = [
       'Represented school at national level competitions',
     ],
     results: '3 medals across 3 major competitions in 3 years',
-    image: categoryImages['Public Speaking'],
+    image: categoryImages['Stage Presence'],
   },
 ];
 
@@ -176,7 +231,7 @@ export default function Experience() {
   const buttonsRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   
-  const [activeCategory, setActiveCategory] = useState<Category>('Leadership');
+  const [activeCategory, setActiveCategory] = useState<Category>('Impact & Leadership');
   const [isAnimating, setIsAnimating] = useState(false);
   const [selectedExperience, setSelectedExperience] = useState<ExperienceCard | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
