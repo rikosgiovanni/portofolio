@@ -164,7 +164,7 @@ export default function Hero() {
           ref={subtitleRef}
           className="text-body text-charcoal/60 opacity-0"
         >
-          Aspiring Data Analyst & Data Scientist
+          AI & Data Enthusiast | Bridging Technology, Creativity, and Community
         </p>
 
         {/* CTA Buttons */}

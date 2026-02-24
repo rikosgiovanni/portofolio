@@ -53,6 +53,26 @@ export default function AboutMe() {
         }
       );
 
+      gsap.from(".highlight-key", {
+        opacity: 0,
+        y: 10,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 60%",
+        },
+      });
+
+      gsap.to(".highlight-ai", {
+        opacity: 0.7,
+        duration: 1.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+      });
+
       // Skills stagger animation
       gsap.fromTo(skillsRef.current?.children || [],
         { opacity: 0, y: 30 },
@@ -130,28 +150,35 @@ export default function AboutMe() {
                 Creativity
               </span>
             </h2>
-
-            <div className="space-y-5 text-body text-charcoal/70 leading-relaxed">
+            
+            <div className="space-y-6 text-body text-charcoal/70 leading-relaxed">
               <p>
-                I am an Information Systems and Technology student at ITB with a strong 
-                focus on the <span className="text-charcoal font-medium">data ecosystem</span>. 
-                I aspire to bridge the gap between complex data and actionable business insights 
-                as a Data Analyst or Data Scientist.
+                I am an Information Systems and Technology student at ITB passionate about building 
+                meaningful <span className="text-charcoal font-medium">data ecosystems</span> and exploring 
+                the real-world applications of <span className="text-charcoal font-medium">Artificial Intelligence</span>. 
+                I aim to bridge complex technologies with tangible impact, transforming data and AI tools into 
+                insights that empower communities and businesses.
               </p>
+
               <p>
-                Beyond data (<span className="text-blue-600 font-medium">Python</span>,{' '}
-                <span className="text-blue-600 font-medium">SQL</span>,{' '}
-                <span className="text-blue-600 font-medium">Java</span>), I have a deep passion 
-                for creative multimedia, holding extensive experience in{' '}
+                My focus spans <span className="text-blue-600 font-medium">Data Analytics</span>,{' '}
+                <span className="text-blue-600 font-medium">Machine Learning</span>, and system development 
+                using <span className="text-blue-600 font-medium">Python</span>,{' '}
+                <span className="text-blue-600 font-medium">SQL</span>, and{' '}
+                <span className="text-blue-600 font-medium">Java</span>. 
+                I am particularly curious about generative AI such as{' '}
+                <span className="text-emerald-600 font-medium">Gemini</span> and its potential to augment 
+                productivity, creativity, and decision-making.
+              </p>
+
+              <p>
+                Beyond data, I bring a creative foundation in{' '}
                 <span className="text-purple-600 font-medium">photography</span>,{' '}
                 <span className="text-purple-600 font-medium">videography</span>, and post-production 
-                using <span className="text-amber-600 font-medium">Premiere Pro</span> and{' '}
-                <span className="text-rose-600 font-medium">DaVinci Resolve</span>.
-              </p>
-              <p>
-                I thrive in environments that challenge both my{' '}
-                <span className="text-charcoal font-medium">analytical thinking</span> and{' '}
-                <span className="text-charcoal font-medium">creative execution</span>.
+                (Premiere Pro, Final Cut Pro, CapCut). I thrive at the intersection of{' '}
+                <span className="text-charcoal font-medium">analytical rigor</span> and{' '}
+                <span className="text-charcoal font-medium">creative execution</span>, building not only intelligent systems, 
+                but communities that grow together in the AI era.
               </p>
             </div>
 
@@ -178,7 +205,7 @@ export default function AboutMe() {
                 <p className="text-caption text-charcoal/50 mt-1">Projects</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-charcoal">3</p>
+                <p className="text-3xl font-bold text-charcoal">3+</p>
                 <p className="text-caption text-charcoal/50 mt-1">Competition Medals</p>
               </div>
               <div>

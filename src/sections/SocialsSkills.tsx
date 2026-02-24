@@ -196,6 +196,24 @@ export default function SocialsSkills() {
                 </a>
               ))}
             </div>
+            <div className="relative mt-12 rounded-3xl overflow-hidden shadow-apple-xl transition-all duration-500 transform-gpu hover:scale-105 hover:shadow-[0_25px_60px_rgba(0,0,0,0.25)]">
+              <div className="absolute inset-0 bg-[linear-gradient(120deg,#3b82f6,#8b5cf6,#ec4899)] bg-[length:200%_200%] animate-gradient-move opacity-60" />
+              <div className="relative z-10 p-10 text-white">
+                <h3 className="text-xl font-semibold mb-3">
+                  I actively explore Artificial Intelligence as both a technical tool and a social responsibility.
+                </h3>
+                <p className="text-white/80 max-w-sm text-sm">
+                  I believe AI should empower people, not replace critical thinking, and I use it intentionally to enhance{" "}
+                  <span className="font-bold text-white">
+                    learning, creativity, and problem-solving
+                  </span>.
+                  Even this website was developed with the assistance of{" "}
+                  <span className="font-bold text-white">
+                    AI as a collaborative tool, not a shortcut
+                  </span>.
+                </p>
+              </div>
+            </div>           
           </div>
 
           {/* Skills Categories */}
