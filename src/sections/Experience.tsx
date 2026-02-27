@@ -11,7 +11,6 @@ import publicspeaking from '@/assets/cat-publicspeaking.jpg';
 
 import shcf from '@/assets/shcf.jpg';
 import shcf1 from '@/assets/shcf1.jpg';
-import shcf2 from '@/assets/shcf2.jpg';
 import shcf3 from '@/assets/shcf3.jpg';
 
 import charity from '@/assets/charity.jpg';
