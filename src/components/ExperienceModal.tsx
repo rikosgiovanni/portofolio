@@ -9,21 +9,26 @@ interface ExperienceModalProps {
   onClose: () => void;
 }
 
-export default function ExperienceModal({ experience, isOpen, onClose }: ExperienceModalProps) {
+export default function ExperienceModal({
+  experience,
+  isOpen,
+  onClose,
+}: ExperienceModalProps) {
   const overlayRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (isOpen) {
-      // Prevent body scroll
       document.body.style.overflow = 'hidden';
-      
-      // Animate in
-      gsap.fromTo(overlayRef.current,
+
+      gsap.fromTo(
+        overlayRef.current,
         { opacity: 0 },
         { opacity: 1, duration: 0.3, ease: 'power2.out' }
       );
-      gsap.fromTo(contentRef.current,
+
+      gsap.fromTo(
+        contentRef.current,
         { opacity: 0, y: 50, scale: 0.95 },
         { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: 'power3.out', delay: 0.1 }
       );
@@ -44,6 +49,7 @@ export default function ExperienceModal({ experience, isOpen, onClose }: Experie
       duration: 0.25,
       ease: 'power2.in',
     });
+
     gsap.to(overlayRef.current, {
       opacity: 0,
       duration: 0.2,
@@ -52,13 +58,11 @@ export default function ExperienceModal({ experience, isOpen, onClose }: Experie
     });
   };
 
-  // Close on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
-        handleClose();
-      }
+      if (e.key === 'Escape' && isOpen) handleClose();
     };
+
     window.addEventListener('keydown', handleEscape);
     return () => window.removeEventListener('keydown', handleEscape);
   }, [isOpen]);
@@ -74,7 +78,7 @@ export default function ExperienceModal({ experience, isOpen, onClose }: Experie
         onClick={handleClose}
       />
 
-      {/* Modal Content */}
+      {/* Modal Content Wrapper */}
       <div className="absolute inset-0 flex items-center justify-center p-4 md:p-8 pointer-events-none">
         <div
           ref={contentRef}
@@ -91,7 +95,7 @@ export default function ExperienceModal({ experience, isOpen, onClose }: Experie
 
           {/* Scrollable Content */}
           <div className="overflow-y-auto max-h-[90vh]">
-            {/* Hero Image */}
+            {/* Hero */}
             <div className="relative h-64 md:h-80 overflow-hidden">
               <img
                 src={experience.image}
@@ -99,8 +103,6 @@ export default function ExperienceModal({ experience, isOpen, onClose }: Experie
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-              
-              {/* Title Overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                 <span className="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-medium mb-3">
                   {experience.category}
@@ -112,23 +114,29 @@ export default function ExperienceModal({ experience, isOpen, onClose }: Experie
               </div>
             </div>
 
-            {/* Content */}
+            {/* Body */}
             <div className="p-6 md:p-8">
-              {/* Meta Info */}
+              {/* Meta */}
               <div className="flex flex-wrap gap-4 mb-8 pb-8 border-b border-charcoal/10">
                 <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-offwhite">
                   <Calendar className="w-4 h-4 text-blue-600" />
-                  <span className="text-sm font-medium text-charcoal">{experience.date}</span>
+                  <span className="text-sm font-medium text-charcoal">
+                    {experience.date}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-offwhite">
                   <MapPin className="w-4 h-4 text-purple-600" />
-                  <span className="text-sm font-medium text-charcoal">{experience.location}</span>
+                  <span className="text-sm font-medium text-charcoal">
+                    {experience.location}
+                  </span>
                 </div>
               </div>
 
-              {/* Description */}
+              {/* Overview */}
               <div className="mb-8">
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Overview</h3>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">
+                  Overview
+                </h3>
                 <p className="text-body text-charcoal/70 leading-relaxed">
                   {experience.description}
                 </p>
@@ -144,12 +152,14 @@ export default function ExperienceModal({ experience, isOpen, onClose }: Experie
                   {experience.responsibilities.map((resp, idx) => (
                     <div
                       key={idx}
-                      className="flex items-start gap-3 p-4 rounded-xl bg-offwhite/50 hover:bg-offwhite transition-colors duration-200"
+                      className="flex items-start gap-3 p-4 rounded-xl bg-offwhite/50"
                     >
-                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-500/10 flex items-center justify-center text-xs font-semibold text-blue-600">
+                      <span className="w-6 h-6 rounded-full bg-blue-500/10 flex items-center justify-center text-xs font-semibold text-blue-600">
                         {idx + 1}
                       </span>
-                      <span className="text-sm text-charcoal/80">{resp}</span>
+                      <span className="text-sm text-charcoal/80">
+                        {resp}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -162,29 +172,67 @@ export default function ExperienceModal({ experience, isOpen, onClose }: Experie
                   Results & Impact
                 </h3>
                 <div className="p-6 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100">
-                  <p className="text-body text-charcoal/80">{experience.results}</p>
+                  <p className="text-body text-charcoal/80">
+                    {experience.results}
+                  </p>
                 </div>
               </div>
 
-              {/* Documentation Gallery */}
-              <div>
-                <h3 className="text-lg font-semibold text-charcoal mb-4">Documentation</h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {[1, 2, 3].map((i) => (
-                    <div
-                      key={i}
-                      className="aspect-square rounded-xl bg-offwhite flex items-center justify-center group cursor-pointer hover:bg-softgray transition-colors duration-300"
-                    >
-                      <div className="text-center">
-                        <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-charcoal/5 flex items-center justify-center group-hover:bg-charcoal/10 transition-colors">
-                          <ExternalLink className="w-5 h-5 text-charcoal/30" />
-                        </div>
-                        <span className="text-xs text-charcoal/40">Photo {i}</span>
-                      </div>
-                    </div>
-                  ))}
+              {/* Documentation */}
+              {experience.documentation?.length ? (
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-lg font-semibold text-charcoal">
+                      Documentation
+                    </h3>
+                    <span className="text-xs text-charcoal/40">
+                      Photos are clickable
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {experience.documentation.map((item, index) => {
+                      const Wrapper: any = item.link ? 'a' : 'div';
+
+                      return (
+                        <Wrapper
+                          key={index}
+                          {...(item.link && {
+                            href: item.link,
+                            target: '_blank',
+                            rel: 'noopener noreferrer',
+                          })}
+                          className="group relative block aspect-square rounded-xl overflow-hidden cursor-pointer"
+                        >
+                          <img
+                            src={item.image}
+                            alt={item.caption || `Documentation ${index + 1}`}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+
+                          <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                          {item.link && (
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                              <div className="w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                                <ExternalLink className="w-5 h-5 text-charcoal" />
+                              </div>
+                            </div>
+                          )}
+
+                          {item.caption && (
+                            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                              <p className="text-xs text-white">
+                                {item.caption}
+                              </p>
+                            </div>
+                          )}
+                        </Wrapper>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
+              ) : null}
             </div>
           </div>
         </div>
