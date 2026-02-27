@@ -212,15 +212,12 @@ const experiences: ExperienceCard[] = [
     image: shcf,
     documentation: [
       {
-        image: shcf2,
-        link: "https://www.instagram.com/p/Cu6SNbBv5gl/?img_index=2"
-      },
-      {
         image: shcf3,
         link: "https://www.instagram.com/p/CybUL4avelA/"
       },
       {
         image: shcf1,
+        link: "https://www.instagram.com/p/Cu6SNbBv5gl/?img_index=2"
       }
     ]
   },
