@@ -11,6 +11,7 @@ import publicspeaking from '@/assets/cat-publicspeaking.jpg';
 
 import shcf from '@/assets/shcf.jpg';
 import shcf1 from '@/assets/shcf1.jpg';
+import shcf2 from '@/assets/shcf2.jpg';
 import shcf3 from '@/assets/shcf3.jpg';
 
 import charity from '@/assets/charity.jpg';
@@ -211,12 +212,15 @@ const experiences: ExperienceCard[] = [
     image: shcf,
     documentation: [
       {
+        image: shcf2,
+        link: "https://www.instagram.com/p/Cu6SNbBv5gl/?img_index=2"
+      },
+      {
         image: shcf3,
         link: "https://www.instagram.com/p/CybUL4avelA/"
       },
       {
         image: shcf1,
-        link: "https://www.instagram.com/p/Cu6SNbBv5gl/?img_index=2"
       }
     ]
   },
