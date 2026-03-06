@@ -29,6 +29,28 @@ import kroyo1 from '@/assets/kroyo1.jpg';
 import kroyo2 from '@/assets/kroyo2.jpg';
 import kroyo3 from '@/assets/kroyo3.jpg';
 
+import rohkris from '@/assets/rohkris.jpg';
+import rohkris1 from '@/assets/rohkris1.jpg';
+import rohkris2 from '@/assets/rohkris2.jpg';
+import rohkris3 from '@/assets/rohkris3.jpg';
+
+import gsa from '@/assets/gsa.jpg';
+import gsa1 from '@/assets/gsa1.jpg';
+import gsa2 from '@/assets/gsa2.jpg';
+
+import slime from '@/assets/slime.jpg';
+import slime1 from '@/assets/slime1.jpg';
+import slime2 from '@/assets/slime2.jpg';
+import slime3 from '@/assets/slime3.jpg';
+
+import itbjes from '@/assets/itbjes.jpg';
+import itbjes1 from '@/assets/itbjes1.jpg';
+import itbjes2 from '@/assets/itbjes2.jpg';
+import itbjes3 from '@/assets/itbjes3.jpg';
+
+import expo from '@/assets/expo.jpg';
+import expo1 from '@/assets/expo1.jpg';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -240,7 +262,21 @@ const experiences: ExperienceCard[] = [
       'Represented the organization in the Surakarta Highschool Christian Forum (SHCF), acting as the primary liaison between students and faculty members to foster inter-school collaboration.',
     ],
     results: 'Strengthened organizational governance, increased program participation, and established structured leadership continuity within the unit.',
-    image: categoryImages['Impact & Leadership'],
+    image: rohkris,
+    documentation: [
+      {
+        image: rohkris1,
+        link: "https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODkzODAxMjA4NzU1ODI1?story_media_id=3020288514165512714&igsh=OHUzYXZqbThkMDBn"
+      },
+      {
+        image: rohkris2,
+        link: "https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODUzMzUxNzc5OTkwMzA1?story_media_id=3096394131912234643&igsh=a2djaW1odzVpaGZ1"
+      },
+      {
+        image: rohkris3,
+        link: "https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODUzMzUxNzc5OTkwMzA1?story_media_id=3096394131912234643&igsh=a2djaW1odzVpaGZ1"
+      },
+    ]
   },
 
   {
@@ -258,7 +294,19 @@ const experiences: ExperienceCard[] = [
       'Supervised maintenance and allocation of musical equipment, ensuring technical readiness and consistent sound quality for live performances.',
     ],
     results: 'Enhanced performance reliability, strengthened team cohesion, and improved operational efficiency for school-wide music productions.',
-    image: categoryImages['Impact & Leadership'],
+    image: slime,
+    documentation: [
+      {
+        image: slime1
+      },
+      {
+        image: slime2,
+        link: "https://www.instagram.com/reel/C8J8j9dPEEK/?igsh=MWVmdHhubmxta3F3eg=="
+      },
+      {
+        image: slime3
+      },
+    ]
   },
 
   {
@@ -276,7 +324,21 @@ const experiences: ExperienceCard[] = [
       'Collaborated with performers and creative teams to align artistic output with media strategy.',
     ],
     results: 'Generated 5,000+ views on a featured music video cover, ranking among the channel’s top-performing content and significantly increasing audience engagement.',
-    image: categoryImages['Creative Direction'],
+    image: itbjes,
+    documentation: [
+      {
+        image: itbjes1,
+        link: "https://www.instagram.com/p/DQ_QFysk0db/?igsh=cHZxcHR1b2xzanpi"
+      },
+      {
+        image: itbjes2,
+        link: "https://youtu.be/5hIfbU4c250?si=JgVF9CuGNWFFDF6K"
+      },
+      {
+        image: itbjes3,
+        link: "https://www.instagram.com/reel/DFxba-WTwuH/?igsh=MWdrYmhvaW1iODlwdw=="
+      },
+    ]
   },
 
   {
@@ -294,7 +356,12 @@ const experiences: ExperienceCard[] = [
       'Developed and maintained a systematic digital archive of event assets to support official reporting and institutional publications.',
     ],
     results: 'Delivered structured media assets that enhanced promotional reach and enabled efficient post-event documentation workflows.',
-    image: categoryImages['Creative Direction'],
+    image: expo,
+    documentation: [
+      {
+        image: expo1,
+      }
+    ]
   },
 
   {
@@ -365,11 +432,20 @@ const experiences: ExperienceCard[] = [
       'Expanded technical exposure to applied AI concepts, tools, and ecosystem best practices.',
     ],
     results: 'Strengthened applied AI understanding and expanded professional network within a globally connected developer community.',
-    image: categoryImages['Tech & Systems'],
+    image: gsa,
+    documentation: [
+      {
+        image: gsa1,
+        link: "https://www.instagram.com/p/DL2Npp4SI4_/?igsh=MXRhdTYzbzRvd2R0ag=="
+      },
+      {
+        image: gsa2,
+      }
+    ],
   },
 
   {
-    id: '90',
+    id: '13',
     category: 'Tech & Systems',
     title: 'Academic Project — CLI Cooking Simulation Game (Nimonscooked)',
     role: 'Game Developer (Team of 4)',
@@ -387,7 +463,7 @@ const experiences: ExperienceCard[] = [
   },
 
   {
-    id: '91',
+    id: '14',
     category: 'Tech & Systems',
     title: 'Academic Project — Nimons Hospital Management System',
     role: 'System Developer (Team of 6)',
@@ -406,7 +482,7 @@ const experiences: ExperienceCard[] = [
   
   // Public Speaking Example
   {
-    id: '99',
+    id: '15',
     category: 'Stage Presence',
     title: 'Bandwidth — Local Band',
     role: 'Vocalist',
@@ -424,7 +500,7 @@ const experiences: ExperienceCard[] = [
   }, 
 
   {
-    id: '100',
+    id: '16',
     category: 'Stage Presence',
     title: 'Jazz Aula Timur 2025',
     role: 'Jazz Vocalist — ITBJazz',
@@ -441,13 +517,13 @@ const experiences: ExperienceCard[] = [
   },
 
   {
-    id: '101',
+    id: '17',
     category: 'Stage Presence',
     title: 'The 48th Jazz Goes To Campus 2025',
     role: 'Jazz Vocalist — ITBJazz',
     date: 'November 2025',
-    location: 'Universitas Indonesia, Depok',
-    description: 'Represented ITBJazz in one of Indonesia’s largest jazz festivals, performing before a national-scale audience and introducing the ITB music unit on a prestigious stage.',
+    location: 'Depok, West Java, Indonesia',
+    description: 'Represented ITBJazz in one of Indonesia’s largest jazz festivals at Universitas of Indonesia, performing before a national-scale audience and introducing the ITB music unit on a prestigious stage.',
     responsibilities: [
       'Collaborated with 2 fellow vocalists, 5 instrumentalists, and 3 band managers to deliver a coordinated live performance.',
       'Performed in a major jazz festival lineup alongside nationally renowned artists such as Tulus, Raisa, Tompi, Maliq & D’Essentials, Reality Club, and others.',
@@ -459,7 +535,7 @@ const experiences: ExperienceCard[] = [
   },
 
   {
-    id: '102',
+    id: '18',
     category: 'Stage Presence',
     title: 'Jazz Aula Barat 2025',
     role: 'Jazz Vocalist — ITBJazz',
@@ -477,7 +553,7 @@ const experiences: ExperienceCard[] = [
   },
 
   {
-    id: '123',
+    id: '19',
     category: 'Stage Presence',
     title: 'English Competitions',
     role: 'Gold, Silver & Bronze Medalist',

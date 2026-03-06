@@ -185,15 +185,14 @@ export default function ExperienceModal({
                     <h3 className="text-lg font-semibold text-charcoal">
                       Documentation
                     </h3>
-                    <span className="text-xs text-charcoal/40">
-                      Photos are clickable
+                      <span className="text-xs text-charcoal/40">
+                      Some images contain external links
                     </span>
                   </div>
 
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {experience.documentation.map((item, index) => {
-                      const Wrapper: any = item.link ? 'a' : 'div';
-
+                      const Wrapper: any = item.link ? 'a' : 'div';                      
                       return (
                         <Wrapper
                           key={index}
