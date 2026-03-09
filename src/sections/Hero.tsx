@@ -127,7 +127,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={sectionRef}
-      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-[90vh] w-full flex items-center justify-center overflow-hidden pt-20"
     >
       {/* Subtle gradient background */}
       <div
@@ -142,13 +142,13 @@ export default function Hero() {
       <div className="hero-orb-purple absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-500/30 rounded-full blur-2xl" />
 
       {/* Content */}
-      <div ref={contentWrapperRef} className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div ref={contentWrapperRef} className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <h1
           ref={nameRef}
-          className="text-hero text-charcoal mb-6 opacity-0"
+          className="text-hero text-charcoal mb-6 leading-tight opacity-0 max-w-3xl mx-auto"
         >
           Hi, I'm{' '}
-          <span className="bg-gradient-to-r from-charcoal via-blue-600 to-charcoal bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-charcoal via-indigo-500 to-purple-900 bg-clip-text text-transparent ">
             Riko Satriya Giovanni
           </span>
         </h1>

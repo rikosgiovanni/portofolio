@@ -8,6 +8,7 @@ import leadership from '@/assets/cat-leadership.jpg';
 import creative from '@/assets/cat-creative.jpg';
 import programming from '@/assets/cat-programming.jpg';
 import publicspeaking from '@/assets/cat-publicspeaking.jpg';
+import github from '@/assets/github.jpg';
 
 import shcf from '@/assets/shcf.jpg';
 import shcf1 from '@/assets/shcf1.jpg';
@@ -51,6 +52,44 @@ import itbjes3 from '@/assets/itbjes3.jpg';
 import expo from '@/assets/expo.jpg';
 import expo1 from '@/assets/expo1.jpg';
 
+import hmif from '@/assets/hmif.jpg';
+import hmif1 from '@/assets/hmif1.jpg';
+import hmif2 from '@/assets/hmif2.jpg';
+import hmif3 from '@/assets/hmif3.jpg'; 
+
+import bpa from '@/assets/bpa.jpg';
+import bpa1 from '@/assets/bpa1.jpg';
+import bpa2 from '@/assets/bpa2.jpg';
+import bpa3 from '@/assets/bpa3.jpg';
+
+import oop from '@/assets/oop.jpg';
+
+import band from '@/assets/band.jpg';
+import band1 from '@/assets/band1.jpg';
+import band2 from '@/assets/band2.jpg';
+import band3 from '@/assets/band3.jpg';
+
+import jat from '@/assets/jat.jpg';
+import jat1 from '@/assets/jat1.jpg';
+import jat2 from '@/assets/jat2.jpg';
+import jat3 from '@/assets/jat3.jpg';
+
+import jgtc from '@/assets/jgtc.jpg';
+import jgtc1 from '@/assets/jgtc1.jpg';
+import jgtc2 from '@/assets/jgtc2.jpg';
+import jgtc3 from '@/assets/jgtc3.jpg';
+
+import jab from '@/assets/jab.jpg';
+import jab1 from '@/assets/jab1.jpg';
+import jab2 from '@/assets/jab2.jpg';
+
+import lomba from '@/assets/lomba.jpg';
+import lomba1 from '@/assets/lomba1.jpg';
+import lomba2 from '@/assets/lomba2.jpg';
+import lomba3 from '@/assets/lomba3.jpg';
+
+import impact from '@/assets/impact.jpg';
+import impact1 from '@/assets/impact1.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -100,28 +139,7 @@ const categoryImages: Record<Category, string> = {
 // EXPERIENCE DATA - EDIT THIS SECTION
 // Add your CV experiences here following the template below
 // ============================================
-const experiences: ExperienceCard[] = [
-  // ============================================
-  // EXAMPLE CARD - Copy this template to add more
-  // ============================================
-
-    // id: '1',  // Unique ID (1, 2, 3, etc.)
-    // category: 'Leadership',  // Must match one of the categories above
-    // title: 'Your Event/Organization Name',  // Event or organization name
-    // role: 'Your Role/Position',  // Your job title or role
-    // date: '2024',  // Year or date range (e.g., "2023-2024" or "Jan 2024")
-    // location: 'City, Country',  // Location
-    // description: 'Write a brief description of what this experience was about. Keep it 2-3 sentences.',  // Short description
-    // responsibilities: [  // List of things you did (bullet points)
-    //   'First responsibility or task you performed',
-    //   'Second responsibility or achievement',
-    //   'Third responsibility or skill you used',
-    //   'Fourth responsibility (optional)',
-    // ],
-    // results: 'Summarize the outcome or impact. What did you achieve?',  // Results/impact
-    // image: categoryImages.Leadership,  // Use the category image automatically
-  
-  
+const experiences: ExperienceCard[] = [  
   {
     id: '1',
     category: 'Impact & Leadership',
@@ -171,12 +189,12 @@ const experiences: ExperienceCard[] = [
     image: kroyo,
     documentation: [
       {
-        image: kroyo1,
-        link: "https://www.instagram.com/p/DRBySYmEuPQ/?img_index=6"
-      },
-      {
         image: kroyo2,
         link: "https://www.instagram.com/p/DVIV0SeEslI/?img_index=2"
+      },
+      {
+        image: kroyo1,
+        link: "https://www.instagram.com/p/DRBySYmEuPQ/?img_index=6"
       },
       {
         image: kroyo3,
@@ -312,6 +330,37 @@ const experiences: ExperienceCard[] = [
   {
     id: '7',
     category: 'Creative Direction',
+    title: 'Himpunan Mahasiswa Informatika ITB (HMIF ITB)',
+    role: 'Creative & Branding Intern – Media & Information Division',
+    date: 'Sep 2025 – Present',
+    location: 'Bandung, West Java, Indonesia',
+    description: 'Contributing to HMIF ITB’s Media & Information Division by managing visual identity, branding consistency, and structured documentation systems across major organizational events.',
+    responsibilities: [
+      'Managed and maintained the organization’s visual identity across digital platforms to ensure brand consistency.',
+      'Appointed as Head of Publication & Documentation (PDD) for the Batch Leader Election, overseeing media planning and execution.',
+      'Served as documentation staff for large-scale events such as Dies Natalis, ensuring high-quality visual coverage.',
+      'Organized and systematized digital media assets to support official publications and long-term archival needs.',
+    ],
+    results: 'Strengthened HMIF’s digital presence and improved documentation workflow efficiency for institutional reporting.',
+    image: hmif,
+    documentation: [
+      {
+        image: hmif1,
+
+      },
+      {
+        image: hmif2,
+        link: "https://www.instagram.com/reel/DPvtOrNkseQ/?igsh=MWMzYThydzBqcmFpbQ=="
+      },
+      {
+        image: hmif3,
+      }
+    ]
+  },
+
+  {
+    id: '8',
+    category: 'Creative Direction',
     title: 'ITBJazz',
     role: 'Documentation Staff',
     date: 'Feb 2025 – Present',
@@ -342,7 +391,7 @@ const experiences: ExperienceCard[] = [
   },
 
   {
-    id: '8',
+    id: '9',
     category: 'Creative Direction',
     title: 'EXPO TOGA',
     role: 'Documentation Staff',
@@ -365,24 +414,6 @@ const experiences: ExperienceCard[] = [
   },
 
   {
-    id: '9',
-    category: 'Creative Direction',
-    title: 'Himpunan Mahasiswa Informatika ITB (HMIF ITB)',
-    role: 'Creative & Branding Intern – Media & Information Division',
-    date: 'Sep 2025 – Present',
-    location: 'Bandung, West Java, Indonesia',
-    description: 'Contributing to HMIF ITB’s Media & Information Division by managing visual identity, branding consistency, and structured documentation systems across major organizational events.',
-    responsibilities: [
-      'Managed and maintained the organization’s visual identity across digital platforms to ensure brand consistency.',
-      'Appointed as Head of Publication & Documentation (PDD) for the Batch Leader Election, overseeing media planning and execution.',
-      'Served as documentation staff for large-scale events such as Dies Natalis, ensuring high-quality visual coverage.',
-      'Organized and systematized digital media assets to support official publications and long-term archival needs.',
-    ],
-    results: 'Strengthened HMIF’s digital presence and improved documentation workflow efficiency for institutional reporting.',
-    image: categoryImages['Creative Direction'],
-  },
-
-  {
     id: '10',
     category: 'Creative Direction',
     title: 'IMPACT ITB 5.0',
@@ -396,7 +427,12 @@ const experiences: ExperienceCard[] = [
       'Organized and maintained digital archives to support official reporting and post-event publications.',
     ],
     results: 'Ensured seamless media distribution and established an organized digital asset workflow for long-term documentation needs.',
-    image: categoryImages['Creative Direction'],
+    image: impact,
+    documentation: [
+      {
+        image: impact1,
+      },
+    ]
   },
 
   {
@@ -405,7 +441,7 @@ const experiences: ExperienceCard[] = [
     title: 'Sekolah Teknik Elektro dan Informatika – Komputasi (STEI-K) ITB 2024',
     role: 'Documentation Staff',
     date: 'Nov 2024 – Jun 2025',
-    location: 'Bandung, West Java, Indonesia',
+    location: 'Sumedang, West Java, Indonesia',
     description: 'Served as Documentation Staff for STEI-K ITB 2024, contributing to structured media production and official communication materials for cohort programs and faculty-level events.',
     responsibilities: [
       'Documented academic cohort programs and faculty events to ensure comprehensive visual coverage.',
@@ -413,7 +449,20 @@ const experiences: ExperienceCard[] = [
       'Maintained organized digital archives to support reporting and long-term documentation needs.',
     ],
     results: 'Recognized as Best Staff of the Month (Feb 2025) for outstanding contributions to documentation quality and digital content production.',
-    image: categoryImages['Creative Direction'],
+    image: bpa,
+    documentation: [
+      {
+        image: bpa1,
+        link: "https://www.instagram.com/p/DMV6ZtUPwJF/?img_index=1&igsh=MXFyYTcwYzF3eHNxZA=="
+      }
+      ,
+      {
+        image: bpa3,
+      },
+      {
+        image: bpa2,
+      }
+    ]
   },
 
 
@@ -459,7 +508,13 @@ const experiences: ExperienceCard[] = [
       'Collaborated on audio integration (BGM & sound effects) and technical documentation to ensure maintainability and extensibility.',
     ],
     results: 'Achieved a final project score above 97/100, recognized for architectural robustness, clean modular design, and effective team collaboration.',
-    image: categoryImages['Tech & Systems'],
+    image: oop,
+    documentation: [
+      {
+        image: github,
+        link: "https://github.com/NadineArindy/if2010-tubes-2025-k02-h"
+      }
+    ],
   },
 
   {
@@ -468,7 +523,7 @@ const experiences: ExperienceCard[] = [
     title: 'Academic Project — Nimons Hospital Management System',
     role: 'System Developer (Team of 6)',
     date: 'Apr 2025 – May 2025',
-    location: 'Bandung, West Java, Indonesia',
+    location: 'Sumedang, West Java, Indonesia',
     description: 'Collaboratively developed a modular CLI-based Hospital Management System in C within a 6-member team, focusing on spatial room mapping (Denah module) and command-driven menu architecture.',
     responsibilities: [
       'Designed and implemented the Denah module using matrix-based spatial modeling for hospital room allocation and interaction.',
@@ -478,6 +533,12 @@ const experiences: ExperienceCard[] = [
     ],
     results: 'Delivered stable denah visualization and interactive command architecture as part of a fully functional multi-module hospital management system.',
     image: categoryImages['Tech & Systems'],
+    documentation: [
+      {
+        image: github,
+        link: "https://github.com/rikosgiovanni/Tugas-Besar-Algoritma-Pemrograman-K04M-Semester-2-2025"
+      },
+    ]
   },
   
   // Public Speaking Example
@@ -496,28 +557,25 @@ const experiences: ExperienceCard[] = [
       'Maintained performance quality through structured rehearsals and cross-team musical coordination.',
     ],
     results: 'Strengthened stage confidence and expanded exposure through high-visibility institutional and public performances.',
-    image: categoryImages['Stage Presence'],
+    image: band,
+    documentation: [
+      {
+        image: band1,
+        link: "https://www.instagram.com/stories/highlights/18042321674343498/"
+      },
+      {
+        image: band2,
+        link: "https://www.instagram.com/stories/highlights/17942182431133197/"
+      },
+      {
+        image: band3,
+        link: "https://www.instagram.com/stories/highlights/17908321607928851/"
+      },
+    ]
   }, 
 
   {
     id: '16',
-    category: 'Stage Presence',
-    title: 'Jazz Aula Timur 2025',
-    role: 'Jazz Vocalist — ITBJazz',
-    date: 'May 2025',
-    location: 'Bandung, West Java, Indonesia',
-    description: 'Performed as part of ITBJazz in Jazz Aula Timur 2025, contributing to a collaborative live jazz production featuring emerging and professional musicians.',
-    responsibilities: [
-      'Collaborated with 7 fellow performers within a unified band arrangement.',
-      'Delivered live vocal performance in a structured concert environment.',
-      'Shared stage presence in the same event lineup as Teddy Adhitya.',
-    ],
-    results: 'Demonstrated collaborative musicianship and strengthened live-stage adaptability in a multi-performer jazz environment.',
-    image: categoryImages['Stage Presence'],
-  },
-
-  {
-    id: '17',
     category: 'Stage Presence',
     title: 'The 48th Jazz Goes To Campus 2025',
     role: 'Jazz Vocalist — ITBJazz',
@@ -531,11 +589,25 @@ const experiences: ExperienceCard[] = [
       'Maintained professional stage conduct in a high-pressure festival setting.',
     ],
     results: 'Received JGTC Appreciates — Most Dedicated Award, recognizing commitment, professionalism, and performance contribution at a national-level festival.',
-    image: categoryImages['Stage Presence'],
+    image: jgtc,
+    documentation: [
+      {
+        image: jgtc1,
+        link: "https://www.instagram.com/p/DQMLOZdiUD8/"
+      },
+      {
+        image: jgtc3,
+        link: "https://www.instagram.com/p/DRYpQtAj9rJ/?img_index=5"
+      },
+      {
+        image: jgtc2,
+        link: "https://www.instagram.com/p/DQ0-y3JCbrV/?img_index=5"
+      },
+    ]
   },
 
   {
-    id: '18',
+    id: '17',
     category: 'Stage Presence',
     title: 'Jazz Aula Barat 2025',
     role: 'Jazz Vocalist — ITBJazz',
@@ -549,7 +621,46 @@ const experiences: ExperienceCard[] = [
       'Adapted vocal dynamics and stage interaction to suit large concert hall acoustics and live arrangements.',
     ],
     results: 'Strengthened large-ensemble coordination skills and elevated stage professionalism in a high-profile jazz concert setting.',
-    image: categoryImages['Stage Presence'],
+    image: jab,
+    documentation: [
+      {
+        image: jab1,
+        link: "https://www.instagram.com/stories/highlights/17958185223008578/"
+      },
+      {
+        image: jab2,
+        link: "https://www.youtube.com/live/QGd3ICmQihE?si=Yt1x72pc6tUPaAHt&t=1690"
+      },
+    ]
+  },
+
+  {
+    id: '18',
+    category: 'Stage Presence',
+    title: 'Jazz Aula Timur 2025',
+    role: 'Jazz Vocalist — ITBJazz',
+    date: 'May 2025',
+    location: 'Bandung, West Java, Indonesia',
+    description: 'Performed as part of ITBJazz in Jazz Aula Timur 2025, contributing to a collaborative live jazz production featuring emerging and professional musicians.',
+    responsibilities: [
+      'Collaborated with 7 fellow performers within a unified band arrangement.',
+      'Delivered live vocal performance in a structured concert environment.',
+      'Shared stage presence in the same event lineup as Teddy Adhitya.',
+    ],
+    results: 'Demonstrated collaborative musicianship and strengthened live-stage adaptability in a multi-performer jazz environment.',
+    image: jat,
+    documentation: [
+      {
+        image: jat2,
+      },
+      {
+        image: jat1,
+        link: "https://www.instagram.com/p/DKFB2KjyukM/"
+      },
+      {
+        image: jat3,
+      },
+    ]
   },
 
   {
@@ -567,7 +678,18 @@ const experiences: ExperienceCard[] = [
       'Represented school at national level competitions',
     ],
     results: '3 medals across 3 major competitions in 3 years',
-    image: categoryImages['Stage Presence'],
+    image: lomba,
+    documentation: [
+      {
+        image: lomba1,
+      },
+      {
+        image: lomba2,
+      },
+      {
+        image: lomba3,
+      },
+    ],
   },
 ];
 

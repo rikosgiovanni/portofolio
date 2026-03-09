@@ -11,14 +11,16 @@ import tools from '@/assets/category-tools.jpg';
 import linkedin from '@/assets/linkedin.jpg';
 import instagram from '@/assets/instagram.jpg';
 import tiktok from '@/assets/tiktok.jpg';
+import github from '@/assets/github.jpg';
 
 
 gsap.registerPlugin(ScrollTrigger);
 
 const socialLinks = [
+  { name: 'GitHub', image: github, url: 'https://github.com/rikosgiovanni?tab=overview&from=2026-03-01&to=2026-03-10', handle: '@rikosgiovanni' },
   { name: 'LinkedIn', image: linkedin, url: 'https://linkedin.com/in/rikosgiovanni', handle: '@rikosgiovanni' },
   { name: 'Instagram', image: instagram, url: 'https://instagram.com/rikosgiovanni', handle: '@rikosgiovanni' },
-  { name: 'TikTok', image: tiktok, url: 'https://tiktok.com/@rikosgiovanni', handle: '@rikosgiovanni' },
+  { name: 'TikTok', image: tiktok, url: 'https://tiktok.com/@rikosgiovanni', handle: '@rikosgiovanni' }
 ];
 
 const skillCategories = [
@@ -198,17 +200,17 @@ export default function SocialsSkills() {
             </div>
             <div className="relative mt-12 rounded-3xl overflow-hidden shadow-apple-xl transition-all duration-500 transform-gpu hover:scale-105 hover:shadow-[0_25px_60px_rgba(0,0,0,0.25)]">
               <div className="absolute inset-0 bg-[linear-gradient(120deg,#3b82f6,#8b5cf6,#ec4899)] bg-[length:200%_200%] animate-gradient-move opacity-60" />
-              <div className="relative z-10 p-10 text-white">
-                <h3 className="text-xl font-semibold mb-3">
-                  I actively explore Artificial Intelligence as both a technical tool and a social responsibility.
+              <div className="relative z-10 p-7 text-white">
+                <h3 className="text-l font-bold mb-2">
+                  Artificial Intelligence as a technical tool and a social responsibility.
                 </h3>
-                <p className="text-white/80 max-w-sm text-sm">
+                <p className="text-white/75 text-sm">
                   I believe AI should empower people, not replace critical thinking, and I use it intentionally to enhance{" "}
-                  <span className="font-bold text-white">
+                  <span className="font-semibold text-white">
                     learning, creativity, and problem-solving
                   </span>.
                   Even this website was developed with the assistance of{" "}
-                  <span className="font-bold text-white">
+                  <span className="font-semibold text-white">
                     AI as a collaborative tool, not a shortcut
                   </span>.
                 </p>

@@ -113,29 +113,33 @@ export default function AboutMe() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}
           <div ref={imageRef} className="relative opacity-0 order-2 lg:order-1">
-            <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0">
+            <div className="relative aspect-[4/5] max-w-md mx-auto">
               {/* Decorative frame */}
               <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl -z-10" />
               <div className="absolute -inset-2 border border-charcoal/5 rounded-3xl -z-5" />
               
               {/* Profile Image Placeholder */}
-              <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-apple-xl group">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-apple-xl group mx-auto">
                 <img
                   src={profile}
                   alt="Riko Satriya Giovanni"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
               {/* Floating skill badges */}
-              <div className="absolute -bottom-4 -right-4 glass-card rounded-2xl p-4 shadow-apple-lg">
+              <div className="absolute -bottom-4 -right-4 glass-card rounded-2xl px-4 py-3 shadow-apple-lg transition-all duration-300 group-hover:-translate-y-1">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center shadow-md">
                     <Code className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-charcoal">Data & Creative</p>
-                    <p className="text-xs text-charcoal/50">Dual Expertise</p>
+                    <p className="text-sm font-semibold text-charcoal leading-tight">
+                      Data & Creative
+                    </p>
+                    <p className="text-xs text-charcoal/50 leading-tight">
+                      Dual Expertise
+                    </p>
                   </div>
                 </div>
               </div>

@@ -6,14 +6,16 @@ import { Mail, ArrowUpRight} from 'lucide-react';
 import Linkedin from '@/assets/linkedin.jpg';
 import Instagram from '@/assets/instagram.jpg';
 import tiktok from '@/assets/tiktok.jpg';
+import github from '@/assets/github.jpg';
 
 
 gsap.registerPlugin(ScrollTrigger);
 
 const socialLinks = [
+  { icon: github, url: 'https://github.com/rikosgiovanni?tab=overview&from=2026-03-01&to=2026-03-10', label: 'GitHub' },
   { icon: Linkedin, url: 'https://linkedin.com/in/rikosgiovanni', label: 'LinkedIn' },
   { icon: Instagram, url: 'https://instagram.com/rikosgiovanni', label: 'Instagram' },
-  { icon: tiktok, url: 'https://tiktok.com/@rikosgiovanni', label: 'TikTok' },
+  { icon: tiktok, url: 'https://tiktok.com/@rikosgiovanni', label: 'TikTok' }
 ];
 
 export default function Footer() {
@@ -90,7 +92,7 @@ export default function Footer() {
 
       <div className="relative z-10 w-full">
         {/* Main Content */}
-        <div className="max-w-4xl mx-auto px-6 py-24 text-center">
+        <div className="max-w-5xl mx-auto px-6 py-24 text-center">
           <div ref={contentRef} className="opacity-0">
             <div className="flex items-center justify-center gap-3 mb-8">
               <div className="w-12 h-px bg-white/20" />
