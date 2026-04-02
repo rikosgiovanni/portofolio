@@ -37,7 +37,10 @@ import rohkris3 from '@/assets/rohkris3.jpg';
 
 import gsa from '@/assets/gsa.jpg';
 import gsa1 from '@/assets/gsa1.jpg';
-import gsa2 from '@/assets/gsa2.jpg';
+
+import gdgoc from '@/assets/gdgoc.jpg';
+import gdgoc1 from '@/assets/gdgoc1.jpg';
+import gdgoc2 from '@/assets/gdgoc2.jpg';
 
 import slime from '@/assets/slime.jpg';
 import slime1 from '@/assets/slime1.jpg';
@@ -139,7 +142,30 @@ const categoryImages: Record<Category, string> = {
 // EXPERIENCE DATA - EDIT THIS SECTION
 // Add your CV experiences here following the template below
 // ============================================
-const experiences: ExperienceCard[] = [  
+const experiences: ExperienceCard[] = [
+  {
+    id: '0',
+    category: 'Impact & Leadership',
+    title: 'Google',
+    role: 'Google Student Ambassador',
+    date: 'Apr 2026 – Present',
+    location: 'Bandung, West Java, Indonesia',
+    description: 'Serving as the primary campus representative for Google, driving adoption of AI technologies and empowering students to leverage digital tools for productivity, research, and innovation.',
+    responsibilities: [
+      'Led campus-wide adoption of Google AI tools, enabling students to optimize workflows, research processes, and digital productivity.',
+      'Acted as a key "tech connector" between Google and the student ecosystem through mentorship, knowledge sharing, and community engagement.',
+      'Designed and executed high-impact campaigns and workshops focused on AI literacy and emerging technologies.',
+    ],
+    results: 'Accelerated AI awareness and adoption on campus while building a strong, collaborative tech-driven student community.',
+    image: gsa,
+    documentation: [
+      {
+        image: gsa1,
+        link: "https://googlestudentambassador.id/listgsa"
+      }
+    ],
+  },
+
   {
     id: '1',
     category: 'Impact & Leadership',
@@ -481,14 +507,14 @@ const experiences: ExperienceCard[] = [
       'Expanded technical exposure to applied AI concepts, tools, and ecosystem best practices.',
     ],
     results: 'Strengthened applied AI understanding and expanded professional network within a globally connected developer community.',
-    image: gsa,
+    image: gdgoc,
     documentation: [
       {
-        image: gsa1,
+        image: gdgoc1,
         link: "https://www.instagram.com/p/DL2Npp4SI4_/?igsh=MXRhdTYzbzRvd2R0ag=="
       },
       {
-        image: gsa2,
+        image: gdgoc2,
       }
     ],
   },
