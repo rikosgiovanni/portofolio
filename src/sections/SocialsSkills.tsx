@@ -148,11 +148,6 @@ export default function SocialsSkills() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div ref={contentRef} className="text-center mb-16 opacity-0">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-12 h-px bg-charcoal/20" />
-            <span className="text-caption uppercase tracking-widest text-charcoal/50">Connect & Skills</span>
-            <div className="w-12 h-px bg-charcoal/20" />
-          </div>
           <h2 className="text-headline text-charcoal mb-4">
             Let's Connect &{' '}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -197,25 +192,7 @@ export default function SocialsSkills() {
                   <ArrowUpRight className="w-5 h-5 text-charcoal/30 group-hover:text-blue-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                 </a>
               ))}
-            </div>
-            <div className="relative mt-12 rounded-3xl overflow-hidden shadow-apple-xl transition-all duration-500 transform-gpu hover:scale-105 hover:shadow-[0_25px_60px_rgba(0,0,0,0.25)]">
-              <div className="absolute inset-0 bg-[linear-gradient(120deg,#3b82f6,#8b5cf6,#ec4899)] bg-[length:200%_200%] animate-gradient-move opacity-60" />
-              <div className="relative z-10 p-7 text-white">
-                <h3 className="text-l font-bold mb-2">
-                  Artificial Intelligence as a technical tool and a social responsibility.
-                </h3>
-                <p className="text-white/75 text-sm">
-                  I believe AI should empower people, not replace critical thinking, and I use it intentionally to enhance{" "}
-                  <span className="font-semibold text-white">
-                    learning, creativity, and problem-solving
-                  </span>.
-                  Even this website was developed with the assistance of{" "}
-                  <span className="font-semibold text-white">
-                    AI as a collaborative tool, not a shortcut
-                  </span>.
-                </p>
-              </div>
-            </div>           
+            </div>    
           </div>
 
           {/* Skills Categories */}

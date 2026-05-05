@@ -104,12 +104,6 @@ export default function AboutMe() {
       <div className="absolute inset-0 bg-gradient-to-b from-offwhite via-white to-offwhite" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        {/* Section Label */}
-        <div className="flex items-center gap-3 mb-12">
-          <div className="w-12 h-px bg-charcoal/20" />
-          <span className="text-caption uppercase tracking-widest text-charcoal/50">About Me</span>
-        </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}
           <div ref={imageRef} className="relative opacity-0 order-2 lg:order-1">
@@ -170,8 +164,7 @@ export default function AboutMe() {
                 using <span className="text-blue-600 font-medium">Python</span>,{' '}
                 <span className="text-blue-600 font-medium">SQL</span>, and{' '}
                 <span className="text-blue-600 font-medium">Java</span>. 
-                I am particularly curious about generative AI such as{' '}
-                <span className="text-emerald-600 font-medium">Gemini</span> and its potential to augment 
+                I am particularly curious about generative AI such and its potential to augment 
                 productivity, creativity, and decision-making.
               </p>
 

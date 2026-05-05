@@ -838,11 +838,6 @@ export default function Experience() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           {/* Section Heading */}
           <div ref={headingRef} className="text-center mb-16 opacity-0">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="w-12 h-px bg-charcoal/20" />
-              <span className="text-caption uppercase tracking-widest text-charcoal/50">Portfolio</span>
-              <div className="w-12 h-px bg-charcoal/20" />
-            </div>
             <h2 className="text-headline text-charcoal mb-4">
               My{' '}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">

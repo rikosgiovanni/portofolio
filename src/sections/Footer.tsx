@@ -94,11 +94,6 @@ export default function Footer() {
         {/* Main Content */}
         <div className="max-w-5xl mx-auto px-6 py-24 text-center">
           <div ref={contentRef} className="opacity-0">
-            <div className="flex items-center justify-center gap-3 mb-8">
-              <div className="w-12 h-px bg-white/20" />
-              <span className="text-caption uppercase tracking-widest text-white/50">Get in Touch</span>
-              <div className="w-12 h-px bg-white/20" />
-            </div>
           </div>
 
           {/* Closing Statement */}

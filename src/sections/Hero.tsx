@@ -180,6 +180,14 @@ export default function Hero() {
             View My Work
           </a>
           <a
+            href="https://drive.google.com/file/d/1a5Xr_JE6JKbSo0VGiG2APKvcInANJvQf/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3.5 rounded-full bg-white text-charcoal font-medium border border-charcoal/10 hover:border-charcoal/20 hover:bg-offwhite transition-all duration-300 shadow-card"
+          >
+            View My CV
+          </a>
+          <a
             href="#about"
             onClick={(e) => {
               e.preventDefault();
