@@ -354,6 +354,22 @@ const experiences: ExperienceCard[] = [
   },
 
   {
+    id: '22',
+    category: 'Creative Direction',
+    title: 'Inkubator IT (IIT)',
+    role: 'Vice Chief Marketing Officer',
+    date: 'May 2026 – Present',
+    location: 'Bandung, Indonesia',
+    description: 'Led digital branding and educational outreach initiatives for IIT, delivering monthly tech content to expand audience engagement across social platforms.',
+    responsibilities: [
+      'Spearheaded multi-platform digital branding initiatives, consistently publishing contents monthly to drive audience growth across TikTok, Instagram, and LinkedIn within a year.',
+      'Elevated educational outreach by producing monthly specialized tech content (#IITTech and X #IITTalk), featuring C-Level executives and alumni working in the tech industry.',
+    ],
+    results: 'Increased IIT’s digital presence and audience engagement through consistent, executive-led tech content and cross-platform branding campaigns.',
+    image: categoryImages['Creative Direction'],
+  },
+
+  {
     id: '7',
     category: 'Creative Direction',
     title: 'Himpunan Mahasiswa Informatika ITB (HMIF ITB)',
@@ -497,16 +513,16 @@ const experiences: ExperienceCard[] = [
     id: '12',
     category: 'Tech & Systems',
     title: 'Google Developer Groups on Campus ITB (GDGoC ITB)',
-    role: 'Explorer',
-    date: 'Jun 2025 – Present',
-    location: 'Bandung, West Java, Indonesia',
-    description: 'Active member of GDGoC ITB, engaging in structured technical workshops and community-driven sessions focused on Artificial Intelligence and Google technologies to strengthen real-world technical readiness.',
+    role: 'Brand Growth Associate',
+    date: 'May 2026 – Present',
+    location: 'Bandung, Indonesia',
+    description: 'Supporting GDGoC ITB initiatives by accelerating campus engagement with AI-focused workshops and bridging Google’s technical ecosystem with student communities.',
     responsibilities: [
       'Participated in hands-on AI and Google technology workshops involving curated problem sets and practical implementation exercises.',
-      'Collaborated in peer-learning sessions and offline meetups to exchange insights on global opportunities, including scholarships and internships.',
-      'Expanded technical exposure to applied AI concepts, tools, and ecosystem best practices.',
+      'Actively engaged in AI-focused technical workshops, building hands-on experience through real-world problem solving.',
+      'Bridged the gap between Google initiatives and the campus community to accelerate digital transformation and engagement with cutting-edge tech ecosystems.',
     ],
-    results: 'Strengthened applied AI understanding and expanded professional network within a globally connected developer community.',
+    results: 'Improved campus adoption of Google technologies and strengthened the connection between student communities and industry-led AI initiatives.',
     image: gdgoc,
     documentation: [
       {
@@ -520,10 +536,27 @@ const experiences: ExperienceCard[] = [
   },
 
   {
+    id: '20',
+    category: 'Tech & Systems',
+    title: 'Desktop Journaling Application - Academic Team Project',
+    role: 'Analytics & Frontend Developer',
+    date: 'Apr 2026 – Jun 2026',
+    location: 'Bandung, Indonesia',
+    description: 'Built an academic desktop journaling application with local persistence, real-time analytics, and a unified data aggregation layer for emotional and behavioral insight.',
+    responsibilities: [
+      'Designed a structured data model and integrated SQLite persistent storage to ensure reliable local user data logging and session permanence.',
+      'Developed a dynamic JavaFX dashboard to render real-time chart-based visualizations of emotional and behavioral trends.',
+      'Engineered backend controllers to aggregate multi-source data from journals, moods, and goals, optimizing query pipelines for instant cross-filtering.',
+    ],
+    results: 'Delivered a resilient journaling platform with persistent local storage and interactive analytics, enabling faster insight discovery and dependable session continuity.',
+    image: categoryImages['Tech & Systems'],
+  },
+
+  {
     id: '13',
     category: 'Tech & Systems',
-    title: 'Academic Project — CLI Cooking Simulation Game (Nimonscooked)',
-    role: 'Game Developer (Team of 4)',
+    title: 'CLI Cooking Simulation Game - Academic Team Project',
+    role: 'Game Developer',
     date: 'Nov 2025 – Dec 2025',
     location: 'Bandung, West Java, Indonesia',
     description: 'Collaboratively developed Nimonscooked, a CLI-based cooking simulation game in Java using Object-Oriented Programming (OOP), within a 4-member development team. Contributed to modular system architecture and structured gameplay engine design.',
@@ -544,10 +577,27 @@ const experiences: ExperienceCard[] = [
   },
 
   {
+    id: '21',
+    category: 'Tech & Systems',
+    title: 'Food Delivery Database System - Academic Team Project',
+    role: 'Database Engineer & Data Modeler',
+    date: 'Nov 2025 – Dec 2025',
+    location: 'Bandung, Indonesia',
+    description: 'Designed a normalized relational database and query architecture for a food delivery platform, improving data integrity and analytics over customer, restaurant, and logistics workflows.',
+    responsibilities: [
+      'Co-designed a relational database schema for the food delivery platform, managing complex workflows across customer, restaurant, and logistics entities.',
+      'Mapped functional dependencies for core entities (Driver, Menu, Promo) and normalized the schema to Boyce-Codd Normal Form (BCNF) to eliminate anomalies.',
+      'Formulated optimized MySQL query pipelines using CTEs, multi-table joins, and aggregate functions to analyze revenue rankings and driver performance.',
+    ],
+    results: 'Established a robust database foundation and efficient query pipeline for operational reporting and performance analysis.',
+    image: categoryImages['Tech & Systems'],
+  },
+
+  {
     id: '14',
     category: 'Tech & Systems',
-    title: 'Academic Project — Nimons Hospital Management System',
-    role: 'System Developer (Team of 6)',
+    title: 'Nimons Hospital Management System - Academic Team Project',
+    role: 'System Developer',
     date: 'Apr 2025 – May 2025',
     location: 'Sumedang, West Java, Indonesia',
     description: 'Collaboratively developed a modular CLI-based Hospital Management System in C within a 6-member team, focusing on spatial room mapping (Denah module) and command-driven menu architecture.',
@@ -566,6 +616,8 @@ const experiences: ExperienceCard[] = [
       },
     ]
   },
+
+  
   
   // Public Speaking Example
   {
